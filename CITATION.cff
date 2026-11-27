@@ -1,0 +1,28 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: 'Proyecto Final: Sistema cardiovascular-arterioesclerosis'
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: 'Farid '
+    email: l23212194@tijuana.tecnm.mx
+    affiliation: ITT/TECNM
+    family-names: Garcia Altamirano
+  - given-names: Daniel Hiram
+    family-names: Castro Alcantar
+    email: l23212184@tijuana.tecnm.mx
+    affiliation: ITT/TECNM
+url: 'https://github.com/Nefga/MSFPF'
+keywords:
+  - 'Sistema cardiovascular '
+  - 'Arterioesclerosis '
+  - 'Circuito RLC '
+  - 'Función de transferencia '
+  - Modelado fisiológico
+license: BSD-2-Clause
+version: '1.0'
+date-released: '2026-11-26'
