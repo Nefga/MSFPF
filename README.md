@@ -173,7 +173,7 @@ El circuito se construyó en Simscape con los convertidores Simulink–PS y PS�
 ### Diagrama biológico
 
 <p align="center">
-  <img src="biorenderPF.png" alt="Diagrama biológico del modelo cardiovascular elaborado en BioRender" width="800">
+  <img src="Biorender.jpeg" alt="Diagrama biológico del modelo cardiovascular elaborado en BioRender" width="800">
 </p>
 
 *Figura elaborada en BioRender. Cada etapa del sistema cardiovascular se relaciona con su elemento del circuito: la excitación del corazón ($V_e(t)$, presión/flujo), el transporte sanguíneo con inercia ($L$), la distensibilidad arterial o compliancia ($C_1$), la resistencia vascular ($R_1$, $R_2$ y $R_3$) y la presión arterial distal como voltaje de salida ($V_s(t)$). La figura incluye la tabla de parámetros del control y del caso y el circuito equivalente.*
