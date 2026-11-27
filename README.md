@@ -578,7 +578,7 @@ Desempeño reportado por la herramienta *PID Tuner* para el seguimiento de refer
 | Estabilidad en lazo cerrado | Estable |
 
 <p align="center">
-  <img src="Parametros_controlador_PID.jpeg" alt="Parámetros del controlador PID y desempeño en PID Tuner" width="800">
+  <img src="Parametros controlador PID.jpeg" alt="Parámetros del controlador PID y desempeño en PID Tuner" width="800">
 </p>
 
 ### 3. Función de transferencia del lazo
