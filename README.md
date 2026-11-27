@@ -117,6 +117,7 @@ Analizar y controlar el modelo eléctrico equivalente del sistema cardiovascular
 - Obtener el modelo de ecuaciones integro-diferenciales y el sistema de ecuaciones diferenciales ordinarias de primer orden.
 - Implementar el sistema en Simulink (circuito, función de transferencia y ecuaciones integro-diferenciales) y en Python.
 - Implementar un controlador PID, sintonizar sus ganancias con *Tune* y analizar la respuesta en lazo cerrado.
+- Elaborar un diagrama biológico que relacione los elementos del modelo con el sistema cardiovascular.
 - Interpretar el comportamiento de la salida y las limitaciones del modelo.
 - Documentar el proyecto en un repositorio de GitHub.
 
@@ -168,6 +169,14 @@ El circuito se construyó en Simscape con los convertidores Simulink–PS y PS�
 | $L$ | Se opone a variaciones rápidas de corriente | Análoga a la inercia de la masa sanguínea en movimiento |
 | $C_1$ | Almacena carga y modifica el transitorio | Aproxima la capacidad de distensión de un compartimento arterial idealizado |
 | $V_e$, $V_s$ | Voltajes de entrada y salida | Variables análogas a presión proximal y distal, sin conversión directa V–mmHg |
+
+### Diagrama biológico
+
+<p align="center">
+  <img src="biorenderPF.jpg" alt="Diagrama biológico del modelo cardiovascular elaborado en BioRender" width="800">
+</p>
+
+*Figura elaborada en BioRender. Cada etapa del sistema cardiovascular se relaciona con su elemento del circuito: la excitación del corazón ($V_e(t)$, presión/flujo), el transporte sanguíneo con inercia ($L$), la distensibilidad arterial o compliancia ($C_1$), la resistencia vascular ($R_1$, $R_2$ y $R_3$) y la presión arterial distal como voltaje de salida ($V_s(t)$). La figura incluye la tabla de parámetros del control y del caso y el circuito equivalente.*
 
 ### Justificación de los parámetros del control y del caso
 
@@ -721,7 +730,9 @@ flowchart TD
     M --> N[Sintonizacion y respuesta en lazo cerrado]
     L --> O[Verificacion cruzada]
     N --> O
+    B --> Q[Diagrama biologico en BioRender]
     O --> P[README, figuras y evidencias en GitHub]
+    Q --> P
 ```
 
 El procedimiento integra la formulación analítica y la experimentación *in silico* con una verificación cruzada entre las representaciones del modelo.
@@ -760,6 +771,7 @@ El proyecto sigue una secuencia de **modelado, simulación, control y documentac
 
 ### Etapa 4. Documentación
 
+- [x] Elaborar el diagrama biológico en BioRender.
 - [x] Documentar el análisis matemático y la bitácora.
 - [x] Interpretar el comportamiento de la salida y las limitaciones del modelo.
 - [x] Documentar el proyecto en este README.
@@ -782,8 +794,9 @@ El proyecto sigue una secuencia de **modelado, simulación, control y documentac
 ├── Control_y_caso_matlab_1.pdf           # Figura de la respuesta en MATLAB/Simulink
 ├── Análisismate.pdf                      # Análisis matemático
 ├── Bitacora_parte1.pdf                   # Bitácora del proyecto
-├── Parametros_controlador_PID.jpeg       # Parámetros del PID (PID Tuner)
-└── pythoncontrolcaso.jpg                 # Figura de la respuesta en Python
+├── Parametros controlador PID.jpeg       # Parámetros del PID (PID Tuner)
+├── pythoncontrolcaso.jpg                 # Figura de la respuesta en Python
+└── biorenderPF.jpg                       # Diagrama biológico (BioRender)
 ```
 
 [Volver al contenido](#contenido)
@@ -818,6 +831,7 @@ El proyecto sigue una secuencia de **modelado, simulación, control y documentac
 | Entregable | Evidencia |
 |---|---|
 | Bitácora | `Bitacora_parte1.pdf` con las metas, el circuito, los parámetros y la justificación del LLM |
+| Diagrama biológico | `biorenderPF.jpg` |
 | Circuito equivalente | Diagrama con $V_e$, $V_s$, $R_1$, $L$, $C_1$, $R_2$, $R_3$, $i_1$ e $i_2$ |
 | Análisis matemático | Laplace, función de transferencia, polos, error y ecuaciones integro-diferenciales |
 | Simulación | Modelo `Sistema.slx` y respuestas en lazo abierto y cerrado |
